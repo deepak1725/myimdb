@@ -1,18 +1,10 @@
-from django.shortcuts import render
-from django.contrib.auth.models import User
 from api.serializers import MovieRecordsSerializer
 from rest_framework.response import Response
 from rest_framework import viewsets
-# from rest_framework.decorators import detail_route, list_route
 from rest_framework import status
-from django.http import HttpResponse
 from .models import MovieRecords, MovieGenres
-from django.shortcuts import get_object_or_404
 from rest_framework.views import APIView
-import random, string, types
-from rest_framework import generics
-from django.core import serializers
-from rest_framework.authentication import SessionAuthentication, BasicAuthentication
+import os
 import json
 from rest_framework.permissions import IsAdminUser, DjangoModelPermissionsOrAnonReadOnly
 from django.views import generic
@@ -41,7 +33,6 @@ class LoadDataView(APIView):
 
     def get(self, request, *args, **kw):
         condition = True
-        data=None
         message=""
 
         if MovieGenres.objects.exists() or MovieRecords.objects.exists():
@@ -50,7 +41,10 @@ class LoadDataView(APIView):
 
         if condition:
             message = "Records Added Successfully"
-            with open('imdb.json') as myfile:
+            dir_path = os.path.dirname(os.path.realpath(__file__))
+            file_path = os.path.join(dir_path, 'imdb.json')
+
+            with open(file_path) as myfile:
                 data = json.load(myfile)
 
             for movie in data:

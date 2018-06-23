@@ -50,7 +50,7 @@ class LoadDataView(APIView):
 
         if condition:
             message = "Records Added Successfully"
-            with open('/home/deestar/projects/myimdb/api/imdb.json') as myfile:
+            with open('imdb.json') as myfile:
                 data = json.load(myfile)
 
             for movie in data:

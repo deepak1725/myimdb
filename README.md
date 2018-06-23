@@ -22,8 +22,9 @@ My IMDB is a collection of API endpoints, build to fetch movie records from an e
 4. Run Migrations `python manage.py migrate`
 
 ## Misc:
-1. The Project is also hosted on Heroku and live Demo is available at [Live Demo](https://mydjangular.herokuapp.com/)
+1. The Project is also hosted on Heroku and live Demo is available at [Live Demo](https://myownimdb.herokuapp.com/)
 2. API Documentation is available [Here](https://documenter.getpostman.com/view/1293069/RWEiLHvG#d5330d6c-96d4-4cdc-9601-deab35f47019)
+3. API Collections is available [Here](https://www.getpostman.com/collections/2a6083082af6539b297e/)
 
 ### Enjoy!! Do Star it. :)
 

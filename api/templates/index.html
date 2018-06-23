@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<title>Welcome to My IMDB | For the Lovers of Movies </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<style>
+    .my-blue-grey, .my-hover-blue-grey:hover, .my-blue-gray, .my-hover-blue-gray:hover {
+    color: #fff!important;
+    background-color: #365463!important;
+    }
+</style>
+<body>
+    <!-- Header -->
+    <header class="w3-container w3-theme w3-padding" id="myHeader">
+        <i class=" w3-xlarge w3-button w3-theme"></i>
+        <div class="w3-center">
+            <h1 class="w3-xxxlarge w3-animate-bottom">MYIMDB</h1>
+            <h4>For the Lovers of Movies</h4>
+
+            <div class="w3-padding-32">
+                <button class="w3-btn w3-xlarge w3-theme-dark w3-hover-teal" onclick="taketoAPIDocs()"
+                    style="font-weight:900;">Go to API Docs</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="w3-row-padding w3-center w3-margin-top">
+
+        <div class="">
+            <div class="w3-card w3-container" style="min-height:460px">
+                <h3>Q. What is My IMDB?</h3>
+                <span>My IMDB is a collection of API endpoints, build to fetch movie records from an endpoint.</span>
+                <br>
+                <br>
+                <hr>
+
+                <h3>Q. Is there any access restrictions?</h3>
+                <span>We have two roles, Admin and User and each role has certain limitations and privileges</span>
+                <br>
+                <br>
+                <hr>
+
+                <h3>Q. What is the Technology deployed?</h3>
+                <span>Nice Question! We are using Django at Backend accompanied with Django Rest Framework for API endpoints.
+                    <br>
+                    We are hosted on Heroku. The project is Open Sourced under licence MIT, available <a href="">here</a>
+                </span>
+                <br>
+                <br>
+                <hr>
+
+                <h3>Q. Can i access data from my desktop?</h3>
+                <span>Yes! You can. We have a <a target="_blank" href="https://www.getpostman.com/apps">POSTMAN </a>endpoint collection here,
+                    <a target="_blank" href="https://www.getpostman.com/collections/2a6083082af6539b297e">https://www.getpostman.com/collections/2a6083082af6539b297e</a>
+                    <br>
+                    You can use this link to import collections right in your POSTMAN desktop client.
+                </span>
+                <br>
+                <br>
+                <hr>
+
+                <h3>Q. Where can we see action?</h3>
+                <span>Navigate to API Docs section <a href="https://documenter.getpostman.com/view/1293069/RWEiLHvG#d5330d6c-96d4-4cdc-9601-deab35f47019"> Here </a></span>
+                <hr>
+
+            </div>
+        </div>
+        <hr>
+    </div>
+
+
+    <div class="w3-row-padding">
+
+            <div class="w3-half">
+                <div class="w3-card white">
+                    <div class="w3-container w3-indigo">
+                        <h3>Anonymous/Users Privileges</h3>
+                    </div>
+
+                    <ul class="w3-ul w3-border-top">
+                        <li>
+                            <p>Can Fetch Movie Records</p>
+                            <!-- <p>The response to the animations was ridiculous</p> -->
+                        </li>
+                        <li>
+                            <p>Can Search records based on Movie name or director name.</p>
+                        </li>
+                        <li>
+                            <p>Can jump pages</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="w3-half">
+                <div class="w3-card white">
+                    <div class="w3-container w3-theme">
+                        <h3>Admin Privileges</h3>
+                    </div>
+
+                    <ul class="w3-ul w3-border-top">
+                        <li>
+                            <p>All user associated privileges</p>
+                        </li>
+                        <li>
+                            <p>Can Add/Edit/Delete Movie Records</p>
+                        </li>
+                        <li>
+                            <p>Can Add/Remove Users from <a href="#"> Admin Panel </a></p>
+                        </li>
+                        <li>
+                            <p>Can also View/Edit/Delete Movie/Genre records from <a href="#"> Admin Panel </a></p>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <hr>
+
+    <!-- Footer -->
+    <footer class="w3-container my-blue-grey">
+        <p class="w3-opacity">
+            <span class="w3-left">MYIMDB - All rights reserved</span>
+            <p class="w3-center">Designed and developed by:
+                <a href="https://finddeepak.com">Deepak Sharma </a>
+            </p>
+        </p>
+        <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
+            <span class="w3-text w3-theme-light w3-padding">Go To Top</span>
+            <a class="w3-text-white" href="#myHeader">
+                <span class="w3-xlarge">
+                    <i class="fa fa-chevron-circle-up"></i>
+                </span>
+            </a>
+        </div>
+      </footer>
+      <script>
+          function taketoAPIDocs(){
+              window.location.href = "https://documenter.getpostman.com/view/1293069/RWEiLHvG#d5330d6c-96d4-4cdc-9601-deab35f47019";
+          }
+      </script>
+</body>
+
+</html>

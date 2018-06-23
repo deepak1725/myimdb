@@ -1,0 +1,21 @@
+language: python
+python:
+  - "3.6"
+install:
+    - pip install -r requirements.txt
+
+sudo: false
+
+env:
+  - IMDB
+
+services:
+  - postgresql
+
+script: ./manage.py
+
+before_script:
+  - psql -c 'create database myimdb;' -U postgres
+
+notifications:
+  email: false

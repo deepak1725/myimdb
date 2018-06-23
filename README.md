@@ -1,4 +1,4 @@
-# MyIMDB        [![Build Status](https://travis-ci.org/deepak1725/djangular.svg?branch=master)](https://travis-ci.org/deepak1725/djangular)
+# MyIMDB        [![Build Status](https://travis-ci.org/deepak1725/myimdb.svg?branch=master)](https://travis-ci.org/deepak1725/myimdb)
 
 My IMDB is a collection of API endpoints, build to fetch movie records from an endpoint. 
 
